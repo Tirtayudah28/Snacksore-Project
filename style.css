@@ -1,0 +1,33 @@
+a {
+    text-align: center;
+    line-height: 100px;
+    position: relative;
+    transition: transform 0.3s ease;
+  }
+  
+  a:hover {
+    transform: translateY(-10px); /* Mengubah posisi vertikal ke atas */
+  }
+  
+
+a {
+    text-decoration: none; /* Menghilangkan garis bawah default pada tautan */
+    color: #4D3223; /* Warna teks tautan */
+    position: relative; /* Memberikan posisi relatif agar kita bisa menambahkan garis bawah absolut */
+  }
+  
+  a::after {
+    content: ''; /* Menambahkan konten setelah tautan */
+    display: block; /* Mengubah tautan menjadi blok agar garis bawah bisa diberikan */
+    width: 0; /* Mengatur lebar awal garis bawah menjadi 0 */
+    height: 2px; /* Mengatur tinggi garis bawah */
+    position: absolute; /* Memberikan posisi absolut */
+    bottom: -2px; /* Menggeser garis bawah ke bawah tautan */
+    left: 0; /* Memulai garis bawah dari posisi kiri tautan */
+    transition: width 0.2s; /* Efek transisi lebar garis bawah */
+    
+  }
+
+  
+
+ 
